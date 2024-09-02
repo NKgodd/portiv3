@@ -1,0 +1,235 @@
+/* Estilos Gerais */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bcd4;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #00bcd4;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    color: #00bcd4;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#sidebar.active {
+    transform: translateX(0);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar a {
+    color: #00bcd4;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#sidebar a:hover {
+    background: rgba(0, 188, 212, 0.1);
+    border-radius: 5px;
+}
+
+#openSidebar, #closeSidebar {
+    border: none;
+    background: transparent;
+    color: #00bcd4;
+}
+
+/* Header */
+header {
+    background: #000;
+    border-bottom: 2px solid #00bcd4;
+}
+
+header .navbar-brand img {
+    width: 40px;
+    height: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('../img/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #00bcd4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #fff;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero-section .btn {
+    border-color: #00bcd4;
+    color: #00bcd4;
+}
+
+.hero-section .btn:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 60px 20px;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+}
+
+.skill-card {
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 20px;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+}
+
+.project-card {
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #333;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+}
+
+.about-section img {
+    border: 5px solid #00bcd4;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #00bcd4;
+}
+
+footer .btn {
+    border-color: #00bcd4;
+    color: #00bcd4;
+}
+
+footer .btn:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+footer a {
+    color: #00bcd4;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+        .bg-dark-custom {
+            background-color: #121212;
+        }
+        .btn-outline-cyan {
+            border-color: #00bcd4;
+            color: #00bcd4;
+        }
+        .btn-outline-cyan:hover {
+            background-color: #00bcd4;
+            color: #fff;
+        }
+        .text-cyan {
+            color: #00bcd4 !important;
+        }
+        .about-section {
+            background: url('img/about-bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-dark-custom text-light">
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-black shadow-lg py-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse animate__animated animate__fadeInRight" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-cyan" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-cyan" href="about.html">Sobre Mim</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center text-cyan mb-4 animate__animated animate__fadeInDown">Sobre Mim</h2>
+            <div class="row">
+                <div class="col-md-4 text-center animate__animated animate__fadeInLeft">
+                    <img src="img/carlos.jpg" class="img-fluid rounded-circle" alt="Minha Foto">
+                </div>
+                <div class="col-md-8 animate__animated animate__fadeInRight">
+                    <h3 class="text-cyan">Olá, eu sou Carlos Gonçalves</h3>
+                    <p>Sou um desenvolvedor com experiência em várias tecnologias e um grande entusiasmo por aprender e inovar. Minha paixão é criar soluções que ajudem as pessoas e impactem positivamente o mundo.</p>
+                    <p>Tenho experiência em desenvolvimento web, incluindo front-end e back-end, e trabalhei com diversos frameworks e bibliotecas. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
+                    <a href="index.html" class="btn btn-outline-cyan btn-lg mt-3 animate__animated animate__fadeInUp">Voltar para Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-cyan py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Cink Sano. </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/carlos-gonçalves-7013ba320" class="text-cyan mx-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/SeuUsuario" class="text-cyan mx-2" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+            <p class="mt-2"><small>Desenvolvido com <i class="fas fa-heart text-danger"></i> e muito <i class="fas fa-coffee text-brown"></i></small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
